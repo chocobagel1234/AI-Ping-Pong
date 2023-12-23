@@ -1,0 +1,52 @@
+<!--created by prashant shukla-->
+<!--edited by rimjhim (mahdiya)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--title (<meta> tags always go first, no matter what)-->
+        <title>Ping Pong</title>
+        
+        <!--Boostrap CSS ver. 3.4.0-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        
+        <!--jQuery ver. 3.4.1-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!--Bootstrap JS ver. 3.4.0-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <!--Boostrap Icons ver. 1.11.1-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+     
+        <!--ml5.js ver. 0.4.3-->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <!--p5.js + addons ver. 1.0.0-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+            <div id="header" class="btn btn-warning">
+                <h1 id="header_text">AI Ping-Pong</h1>
+                <button class="btn btn-default" id="modal_toggle" data-toggle="modal" data-target="#myModal">Instructions</button>
+            </div>
+
+            <br>
+            <br>
+            
+            <button class="btn btn-success" onclick="startGame()"><i class="bi bi-play-circle-fill"></i> Play</button>
+            <br>
+            <h3 id="status" class="btn btn-default"></h3>
+
+            <br><br>
+
+            <div id="myCanvas"><!--p5.js canvas is inserted here--></div>
+        </center>    
+    </body>
+    <script src="main.js"></script>
+</html>
