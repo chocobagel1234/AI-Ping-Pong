@@ -1,5 +1,5 @@
 <!--created by prashant shukla-->
-<!--edited by rimjhim (mahdiya)-->
+<!--edited by rimjhim-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -38,7 +38,7 @@
 
             <br>
             <br>
-            
+
             <button class="btn btn-success" onclick="startGame()"><i class="bi bi-play-circle-fill"></i> Play</button>
             <br>
             <h3 id="status" class="btn btn-default"></h3>
@@ -46,6 +46,45 @@
             <br><br>
 
             <div id="myCanvas"><!--p5.js canvas is inserted here--></div>
+
+            <br>
+
+            <button id="restart" class="btn btn-danger">Restart</button>
+
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+        
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                      
+                      <h4 class="display-4">Instructions</h4>
+                    </div>
+        
+                    <div id="modal_list" class="modal-body">
+                      <ol type="1">
+                        <li>First, keep your screen straight.</li>
+    
+                        <li>Move yourself around 3-4 feet (91-122 cm) away from the screen</li>
+    
+                        <li>Move your right wrist up and down - when a red dot appears on it, then the calibration is complete</li>
+    
+                        <li>Now, click "Play" and move  back to the far-away position you were in before.</li>
+    
+                        <li>Remember that the red line is<em> your </em>paddle, which will be controlled by your right wrist's up-and-down motions.</li>
+    
+                        <li>Happy playing!</li>
+                    </ol>
+        
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        <div id="footer" class="text-center">
+            <p>Developed by Rimjhim</p>
+            <!--NOTE: "Rimjhim" is the nickname that my friends call me by sometimes, so I'd prefer to use it as my alias instead of listing my actual name, for privacy reasons-->
+        </div>
         </center>    
     </body>
     <script src="main.js"></script>

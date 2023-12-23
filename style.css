@@ -1,4 +1,6 @@
-body {background-repeat: repeat;}
+body {
+    background-repeat: repeat;
+}
 
 #header {
     width: 100%;
@@ -62,3 +64,21 @@ body {background-repeat: repeat;}
   *::-webkit-scrollbar-thumb:active {
     background-color: #FF8A18;
   }
+
+#modal_list {
+    text-align: left;
+    li {
+        text-align: inherit;
+        font-size: 1.77rem;
+    }
+}
+
+#footer {
+    position: sticky;
+    text-align: center;
+    background-color: rgb(40, 34, 74);
+    color: whitesmoke;
+    padding: 5px;
+    top: 100%;
+    bottom: 0%;
+}
